@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Headless WP Rocks`,
+    description: `Learn how to use WordPress as a headless CMS.`,
+    author: `Headless WP Rocks`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,17 +18,29 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `headless-wp-rocks`,
+        short_name: `headless-wp-rocks`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#F0F4F8`,
+        theme_color: `#243B53`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/hwpr-icon.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Montserrat\:400,400i,600,900`],
+        display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mailchimp`,
+      options: {
+        endpoint: `https://rocks.us4.list-manage.com/subscribe/post?u=ab4dd7cba39cf695fe29fa1f3&amp;id=48f46c5b48`,
+      },
+    },
   ],
 }
