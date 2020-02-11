@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 
 const StyledImg = styled(Img)`
-  filter: saturate(0.3) hue-rotate(180deg);
+  filter: saturate(0.3);
 `
 
 function CommunityImage() {

@@ -1,9 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-import CommunityImage from "../components/communityImage"
-import Emoji from "../components/emoji"
-
 const Container = styled.div`
   h1 {
     display: block;
@@ -20,14 +17,11 @@ const Container = styled.div`
       background: var(--color-yellow-6);
     }
   }
-  p {
-    font-size: 1.1rem;
-  }
 `
 
 function Hero() {
   return (
-    <Container className="content-wrap">
+    <Container>
       <h1>
         <span>Headless</span>
         <span>WordPress</span>
@@ -35,15 +29,6 @@ function Hero() {
           <span>ROCKS.</span>
         </span>
       </h1>
-      <CommunityImage />
-      <p>
-        We're building a community of folks excited to learn how to use
-        WordPress as a modern, headless CMS.
-      </p>
-      <p>
-        The best part? You're invited!{` `}
-        <Emoji symbol="💌" label="love letter" />
-      </p>
     </Container>
   )
 }
