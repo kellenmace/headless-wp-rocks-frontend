@@ -16,9 +16,6 @@ const Container = styled.div`
   .logo-container {
     width: 14%;
   }
-  .tech-icon {
-    filter: url(#grayscale-filter);
-  }
 `
 
 function LogoTrain() {
@@ -28,13 +25,13 @@ function LogoTrain() {
         <ReactIcon />
       </div>
       <div className="logo-container">
+        <WpGraphQLIcon />
+      </div>
+      <div className="logo-container">
         <GraphQLIcon />
       </div>
       <div className="logo-container">
         <WordPressIcon />
-      </div>
-      <div className="logo-container">
-        <WpGraphQLIcon />
       </div>
       <div className="logo-container">
         <ApolloIcon />

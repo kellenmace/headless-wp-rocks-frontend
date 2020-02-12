@@ -25,8 +25,8 @@ function Subscribe() {
     <Container>
       <h2>Join</h2>
       <p>
-        Sign up to receive occasional email updates and exclusive Headless WP
-        Rocks members-only content.
+        Sign up to receive free email updates on building modern JavaScript apps
+        with a headless WordPress backend.
       </p>
       {isSubmitted ? (
         <p>

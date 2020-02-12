@@ -8,15 +8,16 @@ import WaveDividerBottom from "../components/waveDividerBottom"
 
 const Container = styled.div`
   position: relative;
-  margin-top: 150px;
+  /* margin-top: 150px; */
+  margin-top: 30px;
   background-color: var(--color-gray-8);
   p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
   .comm-image-container {
     padding-left: var(--content-padding);
     padding-right: var(--content-padding);
-    padding-top: 1px;
+    /* padding-top: 1px; */
   }
   .comm-image-wrap {
     margin-top: -60px;
@@ -24,6 +25,10 @@ const Container = styled.div`
   .copy {
     padding-left: var(--content-padding);
     padding-right: var(--content-padding);
+  }
+  .invited {
+    display: block;
+    font-weight: 900;
   }
 `
 
@@ -42,8 +47,11 @@ function Community() {
           WordPress as a modern, headless CMS.
         </p>
         <p>
-          The best part? You're invited!{` `}
-          <Emoji symbol="💌" label="love letter" />
+          The best part?
+          <span className="invited">
+            You're invited!{` `}
+            <Emoji symbol="💌" label="love letter" />
+          </span>
         </p>
       </div>
       <WaveDividerBottom fill="var(--color-gray-10)" />

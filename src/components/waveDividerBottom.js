@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 const Container = styled.div`
   position: relative;
+  overflow: hidden;
   height: 30px;
   .svg-wrap {
     position: absolute;
@@ -26,7 +27,7 @@ function WaveDividerBottom(props) {
           <path
             d="M0 23c135.4 19 289.6 28.5 462.5 28.5C721.9 51.5 936.7 1 1212.2 1 1395.8.9 1556.7 8.3 1695 23v34H0V23z"
             fill={fill}
-            fill-rule="evenodd"
+            fillRule="evenodd"
           ></path>
         </svg>
       </div>

@@ -2,8 +2,11 @@ import React from "react"
 import styled from "styled-components"
 
 const Container = styled.div`
+  overflow: hidden;
+  padding-bottom: 0.75rem;
   h1 {
     display: block;
+    margin: 0;
     text-align: center;
     transform: rotate(-5deg);
     font-size: 3.5rem;
