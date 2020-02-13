@@ -8,8 +8,8 @@ import WaveDividerBottom from "../components/waveDividerBottom"
 
 const Container = styled.div`
   position: relative;
-  /* margin-top: 150px; */
-  margin-top: 30px;
+  /* Account for the negative margin below, plus the 55px from the top wave */
+  margin-top: calc(130px + 55px);
   background-color: var(--color-gray-8);
   p {
     font-size: 1.4rem;
@@ -17,10 +17,9 @@ const Container = styled.div`
   .comm-image-container {
     padding-left: var(--content-padding);
     padding-right: var(--content-padding);
-    /* padding-top: 1px; */
   }
   .comm-image-wrap {
-    margin-top: -60px;
+    margin-top: -130px;
   }
   .copy {
     padding-left: var(--content-padding);
@@ -28,6 +27,7 @@ const Container = styled.div`
   }
   .invited {
     display: block;
+    font-size: 1.7rem;
     font-weight: 900;
   }
 `

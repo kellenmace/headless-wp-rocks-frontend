@@ -26,7 +26,7 @@ function Subscribe() {
       <h2>Join</h2>
       <p>
         Sign up to receive free email updates on building modern JavaScript apps
-        with a headless WordPress backend.
+        with headless WordPress backends.
       </p>
       {isSubmitted ? (
         <p>
