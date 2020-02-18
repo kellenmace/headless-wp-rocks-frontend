@@ -24,22 +24,24 @@ function Subscribe() {
   return (
     <Container>
       <h2>Join</h2>
-      <p>
-        Sign up to receive free email updates on building modern JavaScript apps
-        with headless WordPress backends.
-      </p>
       {isSubmitted ? (
         <p>
           Thanks!{` `}
           <Emoji symbol="😊" label="smile" />
-          <Emoji symbol="🙌🝼" label="praise hands" />
+          <Emoji symbol="🙌" label="praise hands" />
         </p>
       ) : (
-        <SubscribeForm
-          email={email}
-          setEmail={setEmail}
-          handleSubmit={handleSubmit}
-        />
+        <>
+          <p>
+            Sign up to receive free email updates on building amazing modern
+            JavaScript apps powered by headless WordPress backends.
+          </p>
+          <SubscribeForm
+            email={email}
+            setEmail={setEmail}
+            handleSubmit={handleSubmit}
+          />
+        </>
       )}
     </Container>
   )
