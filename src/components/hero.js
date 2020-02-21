@@ -24,7 +24,7 @@ const Container = styled.div`
 
 function Hero() {
   return (
-    <Container>
+    <Container className="content-area">
       <h1>
         <span>Headless</span>
         <span>WordPress</span>

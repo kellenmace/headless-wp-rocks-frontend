@@ -6,7 +6,7 @@ import HwpLogo from "./hwpLogo"
 import ExternalLinkIcon from "./externalLinkIcon"
 
 const StyledHeader = styled.div`
-  padding: var(--content-padding) var(--content-padding) 0;
+  padding-top: var(--content-padding);
   .wrap {
     display: flex;
     padding-bottom: var(--content-padding);
@@ -31,7 +31,7 @@ const StyledHeader = styled.div`
 
 function Header() {
   return (
-    <StyledHeader>
+    <StyledHeader className="content-area">
       <div className="wrap">
         <div className="logo">
           <Link to="/">

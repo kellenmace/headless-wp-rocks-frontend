@@ -6,8 +6,10 @@ import SubscribeForm from "./subscribeForm"
 import Emoji from "./emoji"
 
 const Container = styled.div`
-  h2 {
+  h2,
+  p {
     margin-top: 0;
+    margin-bottom: 1.5rem;
   }
 `
 
@@ -26,14 +28,14 @@ function Subscribe() {
       <h2>Join</h2>
       {isSubmitted ? (
         <p>
-          Thanks!{` `}
+          Thanks! You rule!{` `}
           <Emoji symbol="😊" label="smile" />
           <Emoji symbol="🙌" label="praise hands" />
         </p>
       ) : (
         <>
           <p>
-            Sign up to receive free email updates on building amazing modern
+            Sign up to receive free email updates on how to build amazing modern
             JavaScript apps powered by headless WordPress backends.
           </p>
           <SubscribeForm

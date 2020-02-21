@@ -8,7 +8,8 @@ const StyledFooter = styled.footer`
   background-color: var(--color-gray-2);
   color: var(--color-gray-6);
   .wrap {
-    padding: var(--content-padding);
+    padding: calc(var(--vertical-spacing) - 55px) var(--content-padding)
+      var(--content-padding);
   }
 `
 

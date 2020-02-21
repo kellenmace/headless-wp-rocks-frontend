@@ -11,14 +11,21 @@ import LogoTrain from "../components/logoTrain"
 
 const Container = styled.div`
   section {
-    margin-bottom: 6rem;
+    margin-bottom: var(--vertical-spacing);
   }
   .hero-section {
-    margin-top: 6rem;
-    margin-bottom: calc(6rem + 30px);
+    margin-top: var(--vertical-spacing);
+    margin-bottom: calc(var(--vertical-spacing) + 30px);
   }
   .subscribe-section > div:first-of-type {
-    margin-bottom: var(--content-padding);
+    max-width: 486px;
+    margin: 0 var(--content-padding) 2rem;
+    padding: 2rem 1.5rem;
+    @media (min-width: 486px) {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 3rem;
+    }
   }
 `
 
@@ -37,7 +44,7 @@ function IndexPage() {
           <Card>
             <Subscribe />
           </Card>
-          <LogoTrain />
+          <LogoTrain className="content-area" />
         </section>
       </Container>
     </Layout>

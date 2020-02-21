@@ -14,6 +14,8 @@ export const GlobalStyles = createGlobalStyle`
     --font-family: 'Montserrat',-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen-Sans','Ubuntu','Cantarell','Helvetica Neue','Helvetica','Arial',sans-serif;
     --border-radius: 8px;
     --content-padding: 1rem;
+    --content-max-width: 1200px;
+    --vertical-spacing: 6rem;
 
     /* Color palette #2 from Refactoring UI */
     --color-white: #fff;
@@ -242,5 +244,12 @@ export const GlobalStyles = createGlobalStyle`
     &:hover, &:active {
       color: var(--color-yellow-2);
     }
+  }
+  .content-area {
+    max-width: var(--content-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
   }
 `
