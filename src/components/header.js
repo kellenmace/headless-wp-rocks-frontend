@@ -26,6 +26,9 @@ const StyledHeader = styled.div`
     text-decoration: none;
     background: none;
     font-weight: 400;
+    &:hover {
+      background-image: none;
+    }
   }
 `
 

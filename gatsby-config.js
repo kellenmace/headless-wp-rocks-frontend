@@ -29,11 +29,22 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
+    // {
+    //   resolve: `gatsby-plugin-google-fonts`,
+    //   options: {
+    //     fonts: [`Montserrat\:400,400i,600,900`],
+    //     display: "swap",
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        fonts: [`Montserrat\:400,400i,600,900`],
-        display: "swap",
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`400`, `400i`, `600`, `900`],
+          },
+        ],
       },
     },
     {
