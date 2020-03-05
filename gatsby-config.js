@@ -41,6 +41,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-51029905-2`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-mailchimp`,
       options: {
         endpoint: `https://rocks.us4.list-manage.com/subscribe/post?u=ab4dd7cba39cf695fe29fa1f3&amp;id=48f46c5b48`,
