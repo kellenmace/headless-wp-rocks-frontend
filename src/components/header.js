@@ -42,7 +42,7 @@ function Header() {
           </Link>
         </div>
         <div className="nav">
-          <a href="https://youtube.com/">
+          <a href="https://www.youtube.com/channel/UCRggrugwys2ZyGrVdpgfsrA">
             YouTube
             <ExternalLinkIcon />
           </a>
