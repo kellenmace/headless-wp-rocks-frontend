@@ -1,9 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import styledNormalize from "styled-normalize"
 
-// Check a stuff like border-box is already applied via normalize and import if not.
-// import "./layout.css"
-
 export const GlobalStyles = createGlobalStyle`
   ${styledNormalize}
 
@@ -15,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
     --border-radius: 8px;
     --content-padding: 1rem;
     --content-max-width: 1200px;
+    --content-max-width-narrow: 800px;
     --vertical-spacing: 6rem;
 
     /* Color palette #2 from Refactoring UI */
@@ -96,6 +94,8 @@ export const GlobalStyles = createGlobalStyle`
     font-family: var(--font-family);
     color: var(--color-gray-2);
     line-height: 1.8;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
     @media (min-width: 500px) {
       font-size: 1.14rem;
     }
@@ -104,7 +104,9 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: inherit;
   }
   body {
-    background-color: var(--color-gray-10)
+    background-color: var(--color-gray-10);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   h1 {
     font-size: 2.1rem;
@@ -192,27 +194,14 @@ export const GlobalStyles = createGlobalStyle`
   th, td {
     padding: 10px;
   }
-  .content-wrap {
-    padding-left: var(--content-padding);
-    padding-right: var(--content-padding);
-    margin-bottom: var(--content-padding);
-  }
-  .screen-reader {
-    border: 0 !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    clip-path: inset(50%) !important;
-    height: 1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
-    white-space: nowrap !important;
-  }
-  ::selection {
-    background: var(--color-yellow-7);
+  code, pre {
+    font-family: monospace, monospace;
   }
   form {
     color: var(--color-gray-2);
+  }
+  ::selection {
+    background: var(--color-yellow-7);
   }
   ::placeholder {
     color: var(--color-gray-6);
@@ -245,11 +234,15 @@ export const GlobalStyles = createGlobalStyle`
       color: var(--color-yellow-2);
     }
   }
-  .content-area {
-    max-width: var(--content-max-width);
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: var(--content-padding);
-    padding-right: var(--content-padding);
+  .screen-reader {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
   }
 `

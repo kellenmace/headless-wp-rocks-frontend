@@ -7,14 +7,17 @@ import WordPressIcon from "../components/wordpressIcon"
 import WpGraphQLIcon from "../components/wpGraphQLIcon"
 import ApolloIcon from "../components/apolloIcon"
 import GatsbyIcon from "../components/gatsbyIcon"
+import NextJsIcon from "../components/nextJsIcon"
 
 const Container = styled.div`
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
-  max-width: 250px;
   margin: 0 auto;
   .logo-container {
-    width: 14%;
+    width: 12%;
   }
 `
 
@@ -38,6 +41,9 @@ function LogoTrain() {
       </div>
       <div className="logo-container">
         <GatsbyIcon />
+      </div>
+      <div className="logo-container">
+        <NextJsIcon />
       </div>
     </Container>
   )

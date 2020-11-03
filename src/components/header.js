@@ -5,8 +5,12 @@ import styled from "styled-components"
 import HwpLogo from "./hwpLogo"
 import ExternalLinkIcon from "./externalLinkIcon"
 
-const StyledHeader = styled.div`
-  padding-top: var(--content-padding);
+const StyledHeader = styled.header`
+  max-width: var(--content-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--content-padding) var(--content-padding) 0
+    var(--content-padding);
   .wrap {
     display: flex;
     padding-bottom: var(--content-padding);
@@ -34,7 +38,7 @@ const StyledHeader = styled.div`
 
 function Header() {
   return (
-    <StyledHeader className="content-area">
+    <StyledHeader>
       <div className="wrap">
         <div className="logo">
           <Link to="/">

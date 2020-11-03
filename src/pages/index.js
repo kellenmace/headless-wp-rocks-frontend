@@ -44,7 +44,7 @@ function IndexPage() {
           <Card>
             <Subscribe />
           </Card>
-          <LogoTrain className="content-area" />
+          <LogoTrain />
         </section>
       </Container>
     </Layout>

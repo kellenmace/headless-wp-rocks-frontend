@@ -8,6 +8,9 @@ const StyledForm = styled.form`
     background-color: var(--color-gray-10);
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    @media (max-width: 370px) {
+      max-width: 65%;
+    }
     /* When input is in focus, also show border around button. */
     &:focus + button {
       box-shadow: 0 0 0 2px var(--color-blue-9);

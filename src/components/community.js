@@ -13,6 +13,11 @@ const Container = styled.div`
   background-color: var(--color-gray-8);
   .wrap {
     max-width: 700px;
+    max-width: calc(700px + var(--content-padding) * 2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
     padding-bottom: calc(var(--vertical-spacing) - 55px);
   }
   .comm-image-container {
@@ -40,7 +45,7 @@ function Community() {
   return (
     <Container>
       <WaveDividerTop fill="var(--color-gray-10)" />
-      <div className="content-area wrap">
+      <div className="wrap">
         <div className="comm-image-container">
           <div className="comm-image-wrap">
             <CommunityImage />
