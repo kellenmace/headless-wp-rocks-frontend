@@ -30,14 +30,10 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Montserrat`,
-            variants: [`400`, `400i`, `600`, `900`],
-          },
-        ],
+        fonts: [`Montserrat\:400,400i,600,900`],
+        display: "swap",
       },
     },
     {
